@@ -7033,3 +7033,10 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.header-name {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
