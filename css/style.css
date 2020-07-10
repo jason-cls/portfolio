@@ -2365,7 +2365,7 @@ h3 {
 /* line 7, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_footer.scss */
 .footer .footer_top {
   padding-top: 116px;
-  padding-bottom: 190px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -2387,7 +2387,7 @@ h3 {
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: "Alata", sans-serif;
 }
 
@@ -2419,7 +2419,6 @@ h3 {
   color: #596672;
   font-size: 14px;
   font-weight: 400;
-  line-height: 42px;
 }
 
 /* line 43, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_footer.scss */
@@ -2445,7 +2444,7 @@ h3 {
 .footer .footer_top .footer_widget ul li {
   color: #AAB1B7;
   font-size: 14px;
-  line-height: 42px;
+  line-height: 30px;
 }
 
 /* line 63, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_footer.scss */
@@ -7033,3 +7032,15 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.header-name {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.interests-svg {
+  width: auto;
+  height: 60px;
+}
