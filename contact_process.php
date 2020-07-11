@@ -1,6 +1,6 @@
 <?php
 
-    $to = "spn8@spondonit.com";
+    $to = "jason.chongleeshin@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -13,10 +13,10 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Bitmap Photography.";
+    $subject = "You have a message from your portfolio website.";
 
     $logo = 'img/logo.png';
-    $link = '#';
+    $link = 'https://jason-cls.github.io/portfolio/';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
@@ -33,5 +33,13 @@
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
+	
+if (@mail($to, $email, $message, $headers))
+{
+	echo 'The message has been sent.';
+}else{
+	echo 'failed';
+}
 
 ?>
+
