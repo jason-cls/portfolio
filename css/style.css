@@ -3808,6 +3808,14 @@ h3 {
   color: #AAB1B7;
 }
 
+.work_details_area .details_info .info a {
+  color: #0181F5;
+}
+
+.work_details_area .details_info .info a:hover {
+  color: #ff5e13;
+}
+
 /* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .details_single_img .thumb {
   margin-bottom: 30px;
