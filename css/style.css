@@ -7044,3 +7044,12 @@ h6 {
   width: auto;
   height: 60px;
 }
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+.noHover{
+    pointer-events: none;
+}
