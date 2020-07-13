@@ -123,13 +123,15 @@
                                     <p>As a personal project, I decided to implement various kinds of recommender systems in Python from scratch since they have become increasingly popular at recommending relevant content to users across different platforms. Given my interest in anime, I decided to recommend anime content (TV series, movies, etc.) to users based on explicit rating data collected from <a href="https://myanimelist.net/">MyAnimeList.</a>
 									</p>
 									<p>
-									In particular, I implement and evaluate the following approaches:<br>
-									<b>
-									- Popularity Recommender <small>(baseline)</small><br>
-									- Content-based Filtering (CBF)<br>
-									- Collaborative Filtering (CF) <small>(User-based, Item-based, Matrix Factorization)</small></b>
+									In particular, I implement and evaluate the following approaches:
 									</p>
-									
+									<ul>
+									  <li>Popularity Recommender <small>(baseline)</small></li>
+									  <li>Content-based Filtering</li>
+									  <li>Collaborative Filtering 
+										<small>(User-based, Item-based, Matrix Factorization)</small>
+									  </li>
+									</ul>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -139,14 +141,21 @@
 										To evaluate how good a set of recommendations were, I used normalized discounted cumulative gain (NDCG@K) for the 'top K' items as a ranking metric (K=10). 
 									</p>
 									<p>
-										After model evaluation on test data, it was apparent that the Matrix Factorization (MF) model provided the best user recommendations. In second was the baseline popularity recommender. The other models yielded poor performance due to their sensitivity to sparse rating data. Dealing with sparse rating data is a common challenge when there are many products for users to interact with on a platform.
+										After model evaluation on test data, it was apparent that the Matrix Factorization (MF) model provided the best user recommendations. Top ten MF recommendations for a user are shown below. In second was the baseline popularity recommender. The other models yielded poor performance due to their sensitivity to sparse rating data. Dealing with sparse rating data is a common challenge when there are many products for users to interact with on a platform.
 									</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="details_single_img"> -->
-                        <!-- <div class="row"> -->
+                    <div class="details_single_img">
+                        <div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="thumb">
+									<img src="../img/portfolio/mfAnimeRecs.png" alt="">
+									<figcaption class="figure-caption">Top ten Matrix Factorization model recommendations for a specific user</figcaption>
+								</div>
+							
+							</div>
                             <!-- <div class="col-lg-6 col-md-6"> -->
                                 <!-- <div class="thumb"> -->
                                     <!-- <img src="../img/details/1.png" alt=""> -->
@@ -157,8 +166,8 @@
                                     <!-- <img src="../img/details/2.png" alt=""> -->
                                 <!-- </div> -->
                             <!-- </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

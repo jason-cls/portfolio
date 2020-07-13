@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="../css/nice-select.css">
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/gijgo.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slicknav.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
 </head>
 
 <body>
@@ -78,104 +79,100 @@
         </div>
     </header>
     <!-- header-end -->
-    
-        <!-- bradcam_area  -->
-        <div class="bradcam_area bradcam_bg_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="bradcam_text text-center">
-                            <h3>Portfolio</h3>
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>US Airline Twitter Sentiment Analysis</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+    <div class="work_details_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="details_catagory_wrap">
+						<div class="single_catagory">
+                            <span>Project Date</span>
+                            <h4>Jun 2, 2020</h4>
+                        </div>
+                        <div class="single_catagory">
+                            <span>Category</span>
+                            <h4>Python, Machine Learning, NLP,<br> Data Cleaning, Data Visualization, Model Evaluation</h4>
+                        </div>
+						<div class="single_catagory">
+							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Twitter-Sentiment-Analysis/blob/master/Twitter%20Sentiment%20Analysis.ipynb">nbviewer</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Twitter-Sentiment-Analysis/blob/master/Twitter%20Sentiment%20Analysis.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <img src="../img/portfolio/twitter.jpg" alt="">
+                    </div>
+                    <div class="details_info">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info">
+									<h4 style="color:white">Background</h5>
+                                    <p>
+										Gaining an understanding of customer experience via social media can be an important driver for business decisions. 
+									</p>
+									<p>
+										In this project, I use scraped generic tweets available on Kaggle to train a machine learning model capable of predicting whether a tweet regarding a US airline is of positive or negative sentiment. Several natural language processing techniques (NLP) and machine learning models were evaluated for their predictive performance.
+									</p>
+									<div class="thumb pt-3">
+										<img src="../img/portfolio/wc_plane.png" alt="" class="img-fluid" style="max-width: 90%">
+									</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="info">
+									
+									<h4 style="color:white">Results</h5>
+									<p>
+										After data processing, visualization, and spot-checking different combinations of text featurization methods with classifier models, I discovered the following:
+									</p>
+									<p>
+									<ul>
+										<li>Many people had expressed a negative opinion of US airlines in 2015</li>
+										<li>United was both tweeted about the most and received the most complaints</li>
+										<li>Customer service issues and late/cancelled flights formed the majority of complaints</li>
+										<li>A non-sequential ConvNet using 200-dim GloVe word embeddings was the best performing classifier, achieving a test accuracy of ~79% and a ROC AUC of 0.81 on the set of airline tweets.</li>
+									</ul>
+									</p>
+									<p>
+										Even with the use of regularization techniques such as dropout, preventing model overfit was a major challenge when training the ConvNet due to only using a limited amount of data (~200000 tweets). Given these circumstances, I think the ConvNet performed quite well at classifying sentiment.
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details_single_img">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7">
+                                <div class="thumb">
+                                    <img src="../img/portfolio/bar_airline.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5">
+                                <div class="thumb">
+                                    <img src="../img/portfolio/convnet_cm.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /bradcam_area  -->
+    </div>
 
-
-    <!--================Blog Area =================-->
-    <section class="blog_area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-centered">
-                    <div class="blog_left_sidebar">
-					
-                        <article class="blog_item">
-							<a href="anime_recsys.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/anime_pic.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>2</h3>
-                                    <p>Jun</p>
-                                </a>
-                            </div>
-							</a>
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="anime_recsys.html">
-                                    <h2>Building an Anime Recommendation System</h2>
-                                </a>
-                                <p>
-									I survey and implement a variety of popular recommender systems from scratch in Python to suggest relevant anime shows for users to watch.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Python, Recommender Systems, Data Wrangling, Matrix Factorization, Model Evaluation</a></li>
-                                </ul>
-                            </div>							
-                        </article>
-						
-						<article class="blog_item">
-							<a href="twit_sent_analysis.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/twitter.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>10</h3>
-                                    <p>Apr</p>
-                                </a>
-                            </div>
-							</a>
-							<div class="blog_details">
-                                <a class="d-inline-block" href="twit_sent_analysis.html">
-                                    <h2>US Airline Twitter Sentiment Analysis</h2>
-                                </a>
-                                <p>
-									I use NLP to clean, process, and featurize twitter text using a variety of approaches. A ConvNet, alongside many other machine learning models, are used to predict the sentiment of US airline tweets.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Python, Machine Learning, NLP, Data Cleaning, Data Visualization, Model Evaluation</a></li>
-                                </ul>
-                            </div>
-                        </article>
-						
-						<!-- Pagination Navigation-->
-                        <nav class="blog-pagination justify-content-center d-flex">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                        <i class="ti-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item active">
-                                    <a href="#" class="page-link">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                        <i class="ti-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--================Blog Area =================-->
-
+	<hr style="border-top: 0px solid #fff;"/>
 
     <!-- footer start -->
     <footer class="footer">
@@ -253,7 +250,6 @@
         </footer>
     <!--/ footer end  -->
 
-<!-- link that opens popup -->
     <!-- JS here -->
     <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>
@@ -283,4 +279,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>

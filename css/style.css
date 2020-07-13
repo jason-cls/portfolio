@@ -3816,6 +3816,14 @@ h3 {
   color: #ff5e13;
 }
 
+.work_details_area .details_info .info li {
+  list-style-type: disc;
+  margin-left:1em;
+  color: #AAB1B7;
+  /* list-style: none; */
+}
+
+
 /* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .details_single_img .thumb {
   margin-bottom: 30px;
@@ -3824,6 +3832,10 @@ h3 {
 /* line 76, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .details_single_img .thumb img {
   width: 100%;
+}
+
+.work_details_area .details_single_img .thumb figcaption {
+  color: #AAB1B7;
 }
 
 /* line 2, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_team.scss */
@@ -3939,6 +3951,7 @@ h3 {
 
 /* line 36, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_contact.scss */
 .contact-info .media-body p {
+  margin: 0;
   color: #8a8a8a;
 }
 
