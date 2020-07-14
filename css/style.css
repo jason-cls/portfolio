@@ -3807,6 +3807,9 @@ h3 {
   font-weight: 400;
   color: #AAB1B7;
 }
+.work_details_area .details_info .info sup {
+  color: #AAB1B7;
+}
 
 .work_details_area .details_info .info a {
   color: #0181F5;
