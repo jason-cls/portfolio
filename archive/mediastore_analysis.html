@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="../css/nice-select.css">
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/gijgo.css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slicknav.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
 </head>
 
 <body>
@@ -78,173 +79,105 @@
         </div>
     </header>
     <!-- header-end -->
-    
-        <!-- bradcam_area  -->
-        <div class="bradcam_area bradcam_bg_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="bradcam_text text-center">
-                            <h3>Portfolio</h3>
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Digital Media Store Sales Analysis</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+
+    <div class="work_details_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="details_catagory_wrap">
+						<div class="single_catagory">
+                            <span>Project Date</span>
+                            <h4>Oct 15, 2019</h4>
+                        </div>
+                        <div class="single_catagory">
+                            <span>Category</span>
+                            <h4>SQL, Data Visualization, Python, Analytics</h4>
+                        </div>
+						<div class="single_catagory">
+							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Digital-Media-Store-Sales-Analysis/blob/master/Digital%20Media%20Store%20Sales%20Analysis.ipynb">nbviewer</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Digital-Media-Store-Sales-Analysis/blob/master/Digital%20Media%20Store%20Sales%20Analysis.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <img src="../img/portfolio/analysis-wide.jpg" alt="">
+                    </div>
+                    <div class="details_info">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info">
+									<h4 style="color:white">Background</h5>
+                                    <p>
+										In order to make informed decisions, businesses often rely on actionable data-driven insights. In this project, I analyze a digital media store's relational database to answer the following questions:
+									</p>
+									<ul class="pb-4">
+										<li>Which albums should be purchased in the future to retain or improve sales?</li>
+										<li>Which countries have the most potential for growth in sales?</li>
+										<li>Do more customers purchase whole albums, or collections of one or more individual tracks?</li>
+									</ul>
+									<p>
+										The database was queried using SQL (SQLite) and then visualized using Python for interpretability.
+									</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="info">
+									<h4 style="color:white">Conclusions</h5>
+                                    <p>
+										Results of the analysis demonstrated the following:
+									</p>
+									<ul class="pb-4">
+										<li>Maintaining a high inventory of rock albums should be prioritized since more than 50% of individual sales are of this genre.</li>
+										<li>Marketing efforts outside of the USA should be focused on the Czech Republic, India, and the UK since these customers generally produce higher sales relative to the average client, as well as low demographic representation.</li>
+										<li>81% of customer transactions consist of a collection of individual track purchases, rather than whole album purchases.</li>
+									</ul>
+									<p>
+										Full details of the analysis are presented in the notebooks linked at the top of the page.
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details_single_img">
+                        <div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="thumb">
+									<img src="../img/portfolio/media-sales.png" alt="">
+									<figcaption class="figure-caption">Company Sales Breakdown by Country</figcaption>
+								</div>
+							
+							</div>
+                            <!-- <div class="col-lg-6 col-md-6"> -->
+                                <!-- <div class="thumb"> -->
+                                    <!-- <img src="../img/details/1.png" alt=""> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="col-lg-6 col-md-6"> -->
+                                <!-- <div class="thumb"> -->
+                                    <!-- <img src="../img/details/2.png" alt=""> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /bradcam_area  -->
+    </div>
 
-
-    <!--================Blog Area =================-->
-    <section class="blog_area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-centered">
-                    <div class="blog_left_sidebar">
-					
-                        <article class="blog_item">
-							<a href="anime_recsys.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/anime_pic.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>2</h3>
-                                    <p>Jun</p>
-                                </a>
-                            </div>
-							</a>
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="anime_recsys.html">
-                                    <h2>Building an Anime Recommendation System</h2>
-                                </a>
-                                <p>
-									I survey and implement a variety of popular recommender systems from scratch in Python to suggest relevant anime shows for users to watch.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Python, Recommender Systems, Data Wrangling, Matrix Factorization, Model Evaluation</a></li>
-                                </ul>
-                            </div>							
-                        </article>
-						
-						<article class="blog_item">
-							<a href="twit_sent_analysis.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/twitter.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>10</h3>
-                                    <p>Apr</p>
-                                </a>
-                            </div>
-							</a>
-							<div class="blog_details">
-                                <a class="d-inline-block" href="twit_sent_analysis.html">
-                                    <h2>US Airline Twitter Sentiment Analysis</h2>
-                                </a>
-                                <p>
-									I use NLP to clean, process, and featurize twitter text using a variety of approaches. A ConvNet, alongside many other machine learning models, are used to predict the sentiment of US airline tweets.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Python, Machine Learning, NLP, Data Cleaning, Data Visualization, Model Evaluation</a></li>
-                                </ul>
-                            </div>
-                        </article>
-						
-						<article class="blog_item">
-							<a href="dl-keras.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/tf-keras.png" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>22</h3>
-                                    <p>Mar</p>
-                                </a>
-                            </div>
-							</a>
-							<div class="blog_details">
-                                <a class="d-inline-block" href="dl-keras.html">
-                                    <h2>Deep Learning with Keras</h2>
-                                </a>
-                                <p>
-									A collection of Deep Learning projects I've completed in Python using Keras (TensorFlow backend).
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Python, Keras, TensorFlow, Deep Learning, NLP, Computer Vision, Generative-Learning</a></li>
-                                </ul>
-                            </div>
-                        </article>
-						
-						<article class="blog_item">
-							<a href="wine_score.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/wine.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>17</h3>
-                                    <p>Dec</p>
-                                </a>
-                            </div>
-							</a>
-							<div class="blog_details">
-                                <a class="d-inline-block" href="wine_score.html">
-                                    <h2>Text-Based Wine Quality Prediction</h2>
-                                </a>
-                                <p>
-									Grad course project involving the prediction of wine quality scores with written reviews. Data wrangling, feature engineering, and model development were done within an Apache Spark cluster environment in Scala.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>Spark, Scala, Machine Learning, NLP, Data Wrangling, Regression</a></li>
-                                </ul>
-                            </div>
-                        </article>
-						
-						<article class="blog_item">
-							<a href="mediastore_analysis.html">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="../img/portfolio/analysis-wide.jpg" alt="">
-                                <a href="#" class="blog_item_date noHover">
-                                    <h3>15</h3>
-                                    <p>Oct</p>
-                                </a>
-                            </div>
-							</a>
-							<div class="blog_details">
-                                <a class="d-inline-block" href="mediastore_analysis.html">
-                                    <h2>Digital Media Store Sales Analysis</h2>
-                                </a>
-                                <p>
-									Queried data from a relational database and visualized it to highlight key factors which contribute to both the retainment and growth of sales for a digital media store.
-								</p>
-								<ul class="blog-info-link">
-                                    <li><a><i class="fa fa-tags"></i>SQL, Data Visualization, Python, Analytics</a></li>
-                                </ul>
-                            </div>
-                        </article>
-						
-						<!-- Pagination Navigation-->
-                        <nav class="blog-pagination justify-content-center d-flex">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                        <i class="ti-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item active">
-                                    <a href="#" class="page-link">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                        <i class="ti-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--================Blog Area =================-->
-
+	<hr style="border-top: 0px solid #fff;"/>
 
     <!-- footer start -->
     <footer class="footer">
@@ -322,7 +255,6 @@
         </footer>
     <!--/ footer end  -->
 
-<!-- link that opens popup -->
     <!-- JS here -->
     <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>
@@ -352,4 +284,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>
