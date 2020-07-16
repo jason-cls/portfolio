@@ -101,15 +101,15 @@
                     <div class="details_catagory_wrap">
 						<div class="single_catagory">
                             <span>Project Date</span>
-                            <h4>Jul 20, 2020</h4>
+                            <h4>Jul 16, 2020</h4>
                         </div>
                         <div class="single_catagory">
                             <span>Category</span>
                             <h4>Python, Flask, HTML, CSS, SQL, <br>Webscraping, App Development, Deployment</h4>
                         </div>
 						<div class="single_catagory">
-							<a class="boxed-btn3 porject_btn" href="">nbviewer</a>
-                            <a class="boxed-btn3 porject_btn" href=""><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
+							<a class="boxed-btn3 porject_btn" href="http://kaguya-net.herokuapp.com/">Website Link</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/project-himawari"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
                         </div>
                     </div>
                     <div class="banner">
@@ -121,16 +121,38 @@
                                 <div class="info">
 									<h4 style="color:white">Background</h5>
                                     <p>
-										asdfasdf
+										As a fun personal side project to learn about frontend and backend development, I decided to collaborate with a friend to develop and deploy a Flask web app. 
+										The website acts as a comprehensive anime database where users can sign up, search anime, create watchlists for status tracking, and leave reviews. 
 									</p>
-
                                 </div>
+								<div class="info">
+									<h4 style="color:white">Deployment</h5>
+									<p>
+										Heroku was selected since it can easily deploy Python applications, integrates with Git, and provides free hosting.
+									</p>
+									<p>
+										The app is deployed at <a href="http://kaguya-net.herokuapp.com/">http://kaguya-net.herokuapp.com/</a>.
+										<br>
+										Feel free to check it out!
+									</p>
+								</div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="info">
-									<h4 style="color:white">Results</h5>
+									<h4 style="color:white">Frontend</h5>
                                     <p>
-										dffeef
+										The site was built from scratch using HTML, CSS, and Bootstrap elements. After learning the basics, I decided to create the website you're currently viewing!
+									</p>
+                                </div>
+								<div class="info">
+									<h4 style="color:white">Backend</h5>
+                                    <p>
+										The application was developed in Python with a Flask web framework and Jinja2 templating.
+										<br>
+										An API was used to scrape data from <a href="https://myanimelist.net/">MyAnimeList</a>, which was then processed and stored in an SQLite database. Data was queried in Python using SQLalchemy, an ORM.
+									</p>
+									<p>
+										Text search functionality for anime was implemented with Elasticsearch. Since Elasticsearch indexes search items, it allows for much quicker lookup times compared to traditional SQL string matching methods.
 									</p>
                                 </div>
                             </div>
@@ -140,8 +162,8 @@
                         <div class="row">
 							<div class="col-lg-12 col-md-12">
 								<div class="thumb">
-									<img src="../img/portfolio/.png" alt="">
-									<figcaption class="figure-caption">Top te</figcaption>
+									<img src="../img/portfolio/kaguya-home.png" alt="">
+									<figcaption class="figure-caption">Website landing page</figcaption>
 								</div>
 							
 							</div>
