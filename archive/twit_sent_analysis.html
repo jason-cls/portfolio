@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>Building an Anime Recommendation System</h3>
+                        <h3>US Airline Twitter Sentiment Analysis</h3>
                     </div>
                 </div>
             </div>
@@ -105,43 +105,49 @@
                         </div>
                         <div class="single_catagory">
                             <span>Category</span>
-                            <h4>Python, Recommender Systems, Data Wrangling,<br> Matrix Factorization, Model Evaluation</h4>
+                            <h4>Python, Machine Learning, NLP,<br> Data Cleaning, Data Visualization, Model Evaluation</h4>
                         </div>
 						<div class="single_catagory">
-							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Anime-Recommender-System/blob/master/Anime%20Recommendation%20System.ipynb">nbviewer</a>
-                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Anime-Recommender-System/blob/master/Anime%20Recommendation%20System.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
+							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Twitter-Sentiment-Analysis/blob/master/Twitter%20Sentiment%20Analysis.ipynb">nbviewer</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Twitter-Sentiment-Analysis/blob/master/Twitter%20Sentiment%20Analysis.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
                         </div>
                     </div>
                     <div class="banner">
-                        <img src="../img/portfolio/anime_pic.jpg" alt="">
+                        <img src="../img/portfolio/twitter.jpg" alt="">
                     </div>
                     <div class="details_info">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="info">
 									<h4 style="color:white">Background</h5>
-                                    <p>As a personal project, I decided to implement various kinds of recommender systems in Python from scratch since they have become increasingly popular at recommending relevant content to users across different platforms. Given my interest in anime, I decided to recommend anime content (TV series, movies, etc.) to users based on explicit rating data collected from <a href="https://myanimelist.net/">MyAnimeList.</a>
+                                    <p>
+										Gaining an understanding of customer experience via social media can be an important driver for business decisions. 
 									</p>
 									<p>
-									In particular, I implement and evaluate the following approaches:
+										In this project, I use scraped <a href="https://www.kaggle.com/kazanova/sentiment140">generic tweets available on Kaggle</a> to train a machine learning model capable of predicting whether a <a href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment">tweet regarding a US airline</a> is of positive or negative sentiment. Several natural language processing techniques (NLP) and machine learning models were evaluated for their predictive performance.
 									</p>
-									<ul>
-									  <li>Popularity Recommender <small>(baseline)</small></li>
-									  <li>Content-based Filtering</li>
-									  <li>Collaborative Filtering 
-										<small>(User-based, Item-based, Matrix Factorization)</small>
-									  </li>
-									</ul>
+									<div class="thumb pt-3">
+										<img src="../img/portfolio/wc_plane.png" alt="" class="img-fluid" style="max-width: 90%">
+									</div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="info">
+									
 									<h4 style="color:white">Results</h5>
-                                    <p>
-										To evaluate how good a set of recommendations were, I used normalized discounted cumulative gain (NDCG@K) for the 'top K' items as a ranking metric (K=10). 
+									<p>
+										After data processing, visualization, and spot-checking different combinations of text featurization methods with classifier models, I discovered the following:
 									</p>
 									<p>
-										After model evaluation on test data, it was apparent that the Matrix Factorization (MF) model provided the best user recommendations. Top ten MF recommendations for a user are shown below. In second was the baseline popularity recommender. The other models yielded poor performance due to their sensitivity to sparse rating data. Dealing with sparse rating data is a common challenge when there are many products for users to interact with on a platform.
+									<ul>
+										<li>Many people had expressed a negative opinion of US airlines in 2015</li>
+										<li>United was both tweeted about the most and received the most complaints</li>
+										<li>Customer service issues and late/cancelled flights formed the majority of complaints</li>
+										<li>A non-sequential ConvNet using 200-dim GloVe word embeddings was the best performing classifier, achieving a test accuracy of ~79% and a ROC AUC of 0.81 on the set of airline tweets.</li>
+									</ul>
+									</p>
+									<p>
+										Even with the use of regularization techniques such as dropout, preventing model overfit was a major challenge when training the ConvNet due to only using a limited amount of data (~200000 tweets). Given these circumstances, I think the ConvNet performed quite well at classifying sentiment.
 									</p>
                                 </div>
                             </div>
@@ -149,23 +155,16 @@
                     </div>
                     <div class="details_single_img">
                         <div class="row">
-							<div class="col-lg-12 col-md-12">
-								<div class="thumb">
-									<img src="../img/portfolio/mfAnimeRecs.png" alt="">
-									<figcaption class="figure-caption">Top ten Matrix Factorization model recommendations for a specific user</figcaption>
-								</div>
-							
-							</div>
-                            <!-- <div class="col-lg-6 col-md-6"> -->
-                                <!-- <div class="thumb"> -->
-                                    <!-- <img src="../img/details/1.png" alt=""> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-lg-6 col-md-6"> -->
-                                <!-- <div class="thumb"> -->
-                                    <!-- <img src="../img/details/2.png" alt=""> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
+                            <div class="col-lg-7 col-md-7">
+                                <div class="thumb">
+                                    <img src="../img/portfolio/bar_airline.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5">
+                                <div class="thumb">
+                                    <img src="../img/portfolio/convnet_cm.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

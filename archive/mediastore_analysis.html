@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>Building an Anime Recommendation System</h3>
+                        <h3>Digital Media Store Sales Analysis</h3>
                     </div>
                 </div>
             </div>
@@ -101,47 +101,51 @@
                     <div class="details_catagory_wrap">
 						<div class="single_catagory">
                             <span>Project Date</span>
-                            <h4>Jun 2, 2020</h4>
+                            <h4>Oct 15, 2019</h4>
                         </div>
                         <div class="single_catagory">
                             <span>Category</span>
-                            <h4>Python, Recommender Systems, Data Wrangling,<br> Matrix Factorization, Model Evaluation</h4>
+                            <h4>SQL, Data Visualization, Python, Analytics</h4>
                         </div>
 						<div class="single_catagory">
-							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Anime-Recommender-System/blob/master/Anime%20Recommendation%20System.ipynb">nbviewer</a>
-                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Anime-Recommender-System/blob/master/Anime%20Recommendation%20System.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
+							<a class="boxed-btn3 porject_btn" href="https://nbviewer.jupyter.org/github/jason-cls/Digital-Media-Store-Sales-Analysis/blob/master/Digital%20Media%20Store%20Sales%20Analysis.ipynb">nbviewer</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/Digital-Media-Store-Sales-Analysis/blob/master/Digital%20Media%20Store%20Sales%20Analysis.ipynb"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
                         </div>
                     </div>
                     <div class="banner">
-                        <img src="../img/portfolio/anime_pic.jpg" alt="">
+                        <img src="../img/portfolio/analysis-wide.jpg" alt="">
                     </div>
                     <div class="details_info">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="info">
 									<h4 style="color:white">Background</h5>
-                                    <p>As a personal project, I decided to implement various kinds of recommender systems in Python from scratch since they have become increasingly popular at recommending relevant content to users across different platforms. Given my interest in anime, I decided to recommend anime content (TV series, movies, etc.) to users based on explicit rating data collected from <a href="https://myanimelist.net/">MyAnimeList.</a>
+                                    <p>
+										In order to make informed decisions, businesses often rely on actionable data-driven insights. In this project, I analyze a digital media store's relational database to answer the following questions:
 									</p>
-									<p>
-									In particular, I implement and evaluate the following approaches:
-									</p>
-									<ul>
-									  <li>Popularity Recommender <small>(baseline)</small></li>
-									  <li>Content-based Filtering</li>
-									  <li>Collaborative Filtering 
-										<small>(User-based, Item-based, Matrix Factorization)</small>
-									  </li>
+									<ul class="pb-4">
+										<li>Which albums should be purchased in the future to retain or improve sales?</li>
+										<li>Which countries have the most potential for growth in sales?</li>
+										<li>Do more customers purchase whole albums, or collections of one or more individual tracks?</li>
 									</ul>
+									<p>
+										The database was queried using SQL (SQLite) and then visualized using Python for interpretability.
+									</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="info">
-									<h4 style="color:white">Results</h5>
+									<h4 style="color:white">Conclusions</h5>
                                     <p>
-										To evaluate how good a set of recommendations were, I used normalized discounted cumulative gain (NDCG@K) for the 'top K' items as a ranking metric (K=10). 
+										Results of the analysis demonstrated the following:
 									</p>
+									<ul class="pb-4">
+										<li>Maintaining a high inventory of rock albums should be prioritized since more than 50% of individual sales are of this genre.</li>
+										<li>Marketing efforts outside of the USA should be focused on the Czech Republic, India, and the UK since these customers generally produce higher sales relative to the average client, as well as low demographic representation.</li>
+										<li>81% of customer transactions consist of a collection of individual track purchases, rather than whole album purchases.</li>
+									</ul>
 									<p>
-										After model evaluation on test data, it was apparent that the Matrix Factorization (MF) model provided the best user recommendations. Top ten MF recommendations for a user are shown below. In second was the baseline popularity recommender. The other models yielded poor performance due to their sensitivity to sparse rating data. Dealing with sparse rating data is a common challenge when there are many products for users to interact with on a platform.
+										Full details of the analysis are presented in the notebooks linked at the top of the page.
 									</p>
                                 </div>
                             </div>
@@ -151,8 +155,8 @@
                         <div class="row">
 							<div class="col-lg-12 col-md-12">
 								<div class="thumb">
-									<img src="../img/portfolio/mfAnimeRecs.png" alt="">
-									<figcaption class="figure-caption">Top ten Matrix Factorization model recommendations for a specific user</figcaption>
+									<img src="../img/portfolio/media-sales.png" alt="">
+									<figcaption class="figure-caption">Company Sales Breakdown by Country</figcaption>
 								</div>
 							
 							</div>
