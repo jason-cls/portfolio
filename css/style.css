@@ -1434,7 +1434,7 @@ h3 {
 
 /* line 83, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_slider.scss */
 .outline_text.white {
-  -webkit-text-stroke: 1px #EFEFF1;
+  -webkit-text-stroke: 1px ;
   -webkit-text-fill-color: transparent;
   top: 70px;
   line-height: 1;
@@ -7067,6 +7067,18 @@ h6 {
 .interests-svg {
   width: auto;
   height: 60px;
+}
+
+.skills-svg {
+  width: 80%;
+  height: auto;
+}
+
+.other-skills-svg {
+  width: auto;
+  height: 80px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .col-centered{
