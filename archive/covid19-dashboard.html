@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>Text-based Wine Quality Prediction</h3>
+                        <h3>COVID-19 <br>Live Interactive Dashboard</h3>
                     </div>
                 </div>
             </div>
@@ -101,58 +101,44 @@
                     <div class="details_catagory_wrap">
 						<div class="single_catagory">
                             <span>Project Date</span>
-                            <h4>Dec 17, 2019</h4>
+                            <h4>Aug 6, 2020</h4>
                         </div>
                         <div class="single_catagory">
                             <span>Category</span>
-                            <h4>Spark, Scala, Machine Learning,<br> NLP, Data Wrangling, Regression</h4>
+                            <h4>Python, Data Visualization, NoSQL <br> App Development, Deployment</h4>
                         </div>
 						<div class="single_catagory">
-							<a class="boxed-btn3 porject_btn" href="https://drive.google.com/file/d/10GPatX6ZwtpgTCfiyho9COxoNVZ7cy7-/view?usp=sharing"><i class="fa fa-file-text" aria-hidden="true"></i> &nbsp; Report</a>
-                            <a class="boxed-btn3 porject_btn" href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7797540594008975/1819633960292202/8087227997433386/latest.html"><i class="fa fa-code" aria-hidden="true"></i> &nbsp; View Code</a>
+							<a class="boxed-btn3 porject_btn" href="https://covid19status-dashboard.herokuapp.com/">Website Link</a>
+                            <a class="boxed-btn3 porject_btn" href="https://github.com/jason-cls/covid19-dashboard"><i class="fa fa-github" aria-hidden="true"></i> View Code</a>
                         </div>
                     </div>
                     <div class="banner">
-                        <img src="../img/portfolio/wine.jpg" alt="">
+                        <img src="https://raw.githubusercontent.com/jason-cls/covid19-dashboard/master/misc/dash-snapshot.PNG" alt="">
                     </div>
                     <div class="details_info">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="info">
-									<h4 style="color:white">Background</h5>
+									<h4 style="color:white">Overview</h5>
                                     <p>
-										During my graduate studies, I had the opportunity to implement a machine learning model within a DataBricks Spark cluster environment. The task involved developing a model that takes English text from reviews as input and predicts quality scores associated with different wines. Data was obtained from <a href="https://www.kaggle.com/zynicide/wine-reviews/">Kaggle</a>, where it was originally scraped from the WineEnthusiast website.
+										In light of the current COVID-19 pandemic, I thought it would be useful to create an <a href="https://covid19status-dashboard.herokuapp.com/">interactive dashboard</a> to help others visualize the effect of the virus on Canada and the rest of the world. The app is deployed on Heroku and was created in Python using Plotly's Dash, which uses a Flask framework. The dashboard itself retrieves data from a NoSQL cloud database (MongoDB Atlas). The database updates hourly with the latest COVID-19 statistics using a scheduled script.
 									</p>
-									<p>
-										The following regression models were implemented in Spark:
-									</p>
-									<p>
-										<ul>
-										  <li>Linear Regression (LR)</li>
-										  <li>Decision Tree</li>
-										  <li>Random Forest</li>
-										  <li>Gradient Boosted Trees</li>
-										</ul>
-									</p>
-									<p>
-										Text featurization techniques investigated included:
-									</p>
-									<ul>
-									  <li>Stemming</li>
-									  <li>TF-IDF</li>
-									  <li>Word2Vec</li>
-									</ul>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="info">
-									<h4 style="color:white">Results</h5>
+									<h4 style="color:white">Data Sources</h5>
                                     <p>
-										Running a spot check of the regression algorithms, LR outperformed the other tree-based models when either TF-IDF or Word2Vec features were used. I suspected that the tree-based models were unable to model linear relations effectively. 
+										Data stored in the NoSQL database was sourced from:
 									</p>
-									<p>
-										Upon further investigation and hyperparameter tuning, the best found model was a LR model with L2 regularization utilizing TF-IDF as feature inputs. The test set RMSE was 1.76 with an R<sup>2</sup> of 0.68. I think the model could have been further improved by incorporating the other feature information provided (country, price, etc.) in addition to text data.
-									</p>
+									<ul>
+										<li>
+											<a href="https://health-infobase.canada.ca/">Government of Canada, Public Health Infobase</a>
+										</li>
+										<li>
+											<a href="https://ourworldindata.org/coronavirus">Our World in Data</a>
+										</li>
+									</ul>
                                 </div>
                             </div>
                         </div>
